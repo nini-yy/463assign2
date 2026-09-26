@@ -1,5 +1,6 @@
 data
 src/deliverables/q1/hdr_all16
+src/deliverables/q1/hdr_previews
 src/deliverables/q2/color_checker_coords.npy
 src/deliverables/q2/door_color_corrected.hdr
 src/deliverables/q4/my_hdr_jpg.hdr
