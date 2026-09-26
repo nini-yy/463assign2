@@ -1,1 +1,11 @@
 data
+src/deliverables/q1/hdr_all16
+src/deliverables/q2/color_checker_coords.npy
+src/deliverables/q2/door_color_corrected.hdr
+src/deliverables/q4/my_hdr_jpg.hdr
+src/deliverables/q4/my_hdr_raw.hdr
+src/deliverables/q4/ldr
+src/deliverables/q5/dark_frame.npy
+src/deliverables/q5/hist_pixel_samples.npy
+src/deliverables/q5/my_hdr_optimal.hdr
+src/deliverables/q5/noise_params.npy

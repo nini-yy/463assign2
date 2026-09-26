@@ -511,7 +511,10 @@ def writeHDR(name, data):
     cv2.imwrite(name, data[:, :, ::-1].astype(np.float32))
         
 def readHDR(name):
-    raw_in = cv2.imread(name, flags=cv2.IMREAD_ANYDEPTH)
+    # IMREAD_ANYDEPTH alone collapses .hdr files to a 2D grayscale array on
+    # newer OpenCV (tested against opencv-python 5.0.0); IMREAD_UNCHANGED
+    # reliably preserves the 3 color channels.
+    raw_in = cv2.imread(name, flags=cv2.IMREAD_UNCHANGED)
     #flip from bgr to rgb
     return raw_in[:, :, ::-1]
 
